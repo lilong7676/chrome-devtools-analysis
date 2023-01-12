@@ -1,0 +1,1 @@
+node --inspect-brk=9222 for-insepct.js

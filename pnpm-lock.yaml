@@ -1,0 +1,51 @@
+lockfileVersion: 5.4
+
+specifiers:
+  chrome-devtools-frontend: ^1.0.1070764
+  chrome-remote-interface: ^0.31.3
+  isolated-vm: ^4.4.1
+
+dependencies:
+  chrome-devtools-frontend: 1.0.1070764
+  chrome-remote-interface: 0.31.3
+  isolated-vm: 4.4.2
+
+packages:
+
+  /chrome-devtools-frontend/1.0.1070764:
+    resolution: {integrity: sha512-MJCZgLZlKgIpE+gemtc1a9ejPopTA2Rj1iEdRnxl8YON7V13Po4W1vKo+YrVcqUbNpVAaQ5NnZLQQOmnIRTXZg==}
+    dev: false
+
+  /chrome-remote-interface/0.31.3:
+    resolution: {integrity: sha512-NTwb1YNPHXLTus1RjqsLxJmdViKwKJg/lrFEcM6pbyQy04Ow2QKWHXyPpxzwE+dFsJghWuvSAdTy4W0trluz1g==}
+    hasBin: true
+    dependencies:
+      commander: 2.11.0
+      ws: 7.5.9
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
+
+  /commander/2.11.0:
+    resolution: {integrity: sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ==}
+    dev: false
+
+  /isolated-vm/4.4.2:
+    resolution: {integrity: sha512-4ObzqZWZTS3bQtavzgoCMsOxpQt3hMeenkPavx2Razig3wX3fAkXZ3XpmqXKoJu6KMl4egBI1MfSg0BnxZ/rfg==}
+    engines: {node: '>=10.4.0'}
+    requiresBuild: true
+    dev: false
+
+  /ws/7.5.9:
+    resolution: {integrity: sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
