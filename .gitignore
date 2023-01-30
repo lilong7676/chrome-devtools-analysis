@@ -24,7 +24,6 @@ karma-coverage
 interactions-coverage
 perf-data
 npm-debug.log
-/devtools-frontend/scripts/protocol_typescript/*.js
 
 build
 buildtools

@@ -3,7 +3,7 @@ const CDP = require("chrome-remote-interface");
 // 通过默认的连接配置，连接到对应的 调试实例（inspector agent）
 CDP(async (client) => {
   // 连接成功，通过 CDP client 即可操作调试实例
-  const { Debugger, Runtime, Network } = client;
+  const { Debugger, Runtime, Network, Console } = client;
   try {
     // 监听 scriptParsed 事件，拿到 script source code
     Debugger.on("scriptParsed", async (params) => {
@@ -50,6 +50,8 @@ CDP(async (client) => {
     const testValue = await Runtime.evaluate({
       expression: "eval(1 + 1)",
     });
+
+
     console.log("evaluate result", testValue);
   } catch (err) {
     console.error(err);
